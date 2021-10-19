@@ -1,0 +1,54 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.HEADER{
+    background-color: black;
+    height:10vh;
+}
+
+.one img{
+    width:10%;
+}
+
+.team{
+    position: relative;
+    top:-50px;
+    font-size:50px;
+    font-family: "Calibri";
+    text-shadow: 2.5px 2.5px grey;
+}
+
+.tagline{
+    position: relative;
+    top:-50px;
+    font-size: 30px;
+    font-family: "Calibri";
+}
+
+.search{
+    font-size: 150%;
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 5px;
+    background-color: black;
+    height: 5vh;
+    width: 30%;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 60px;
+}
+.Footer{
+    position:fixed;
+    bottom:0;
+    background-color: black;
+    width:100%;
+    font-size: 26px;
+    height:20vh;
+    color: white;
+}

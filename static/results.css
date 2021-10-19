@@ -1,0 +1,16 @@
+.data{
+    padding : 0 20%;
+    /* background-color : rgb(61,61,61); */
+    width: 100%;
+}
+/* .container{
+    /* background-color : greenyellow;
+    width: 100%;
+    padding : 0% 
+} */
+
+li{
+    background-color : rgb(61,61,61);
+    margin-bottom: 2%;
+    padding : 2% ;
+}

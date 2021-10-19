@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'page3.css' %}">
+    <title>Profile</title>
+
+</head>
+<body>
+    <div class="topNav">
+            <div class="s1"><div class="logoIMG"><img src="/static/images/hexapods.png"></div>
+            <h1>HEXAPODS</h1>
+            <input type="text" placeholder=" Search" class="search">
+            <div class="s2">HOME</div>                                    <!-- space for A-Tag of Home-->
+            </div>    
+        </div>    
+        <div class="ContainerDiv">
+        </div>
+
+     <!--name box-->
+    <div class="main">
+        <div class="one">
+           <div class="profile_image">
+           <img src="/static/images/profile.png" alt="search">
+           </div>
+        <div class="name_affi">
+        <b>
+           <div class="name" name="name">
+           <ul>
+           <li>{{name}}</li>
+           </ul>
+           </div>
+           <div class="affiliation" name="affiliation">
+           <ul>
+           <li>{{affiliation}}</li>
+           </ul>
+           </div></b>
+        </div>
+        <div class="download">
+           <img src="/static/images/download.png" alt="search">
+           <a href="#download">Download</a>
+        </div>
+        </div>
+        <div class="two">
+        <div class="float-child limit">
+        <p>
+            <div class="circle2"><img src="/static/images/search.png" alt="search"></div>
+            <div class="each-block"> <center><h2>RESEARCH INTERESTS</h2></center></div>
+            <div class="researchInterests" name="researchInterests">
+           <ul>
+           <li><!-- researchInterests-->
+              {{ri}}
+           </li>
+           </ul>
+           </div>
+           </p>
+        </div>
+        <div class="float-child limit">
+        <div class="circle"><img src="/static/images/qualification-black.png" alt="search"></div>
+        <div class="each-block"><center><h2>EDUCATION</h2></center></div>
+           <div class="education" name="education">
+           <ul>
+           {% for edu in authedu  %}
+           <li><!--education-->
+           {{edu}} </li>
+           {% endfor %}
+           </ul>
+           </div>
+        </div>
+        <div class="float-child limit">
+        <div class="circle2"><img src="/static/images/projects.png" alt="search"></div>
+        <div class="each-block"><center><h2>PROJECTS</h2></center></div>
+           <div class="projects" name="projects">
+           <ul>
+           {% for projects in authprojects  %}
+           <li><!--projects-->
+           {{projects}}</li>
+           {% endfor %}
+           </ul>
+           </div>
+        </div>
+        <div class="float-child limit">
+        <div class="circle"><img src="/static/images/patent.png" alt="search"></div>
+        <div class="each-block"><center><h2>PRIOR AFFILIATION</h2></center></div>
+           <div class="prior-affiliation" name="priorAffiliation">
+           <ul>
+           {% for paff in pa  %}
+           <li><!--projects-->
+           {{paff}}</li>
+           {% endfor %}
+           </ul>
+           </div>
+        </div>
+        </div>
+        <div class="three">
+        <div class="heading">
+            <div class="circle3"><img src="/static/images/publications.png" alt="search"></div>
+            <div class="each-block2"><center> <h2>PUBLICATIONS</h2> </center></div>
+        </div>
+        <div class="publications" style="height:auto; padding:10px;" name="publications">
+           <ul>
+           {%for pub in authpub%}
+           <li><a href="#">{{pub}}</a></li>
+           </ul>
+           {% endfor %}
+           </div>
+        </div>
+
+        <div class="Footer">
+        CREDITS:
+        <p> Jay Thorat, Amodi Baakle, Reva Kulkarni, Affan Shaikh, Nishant Surwade, Riya Jain</p>
+        </div>
+    </div>
+</body>
+</html>

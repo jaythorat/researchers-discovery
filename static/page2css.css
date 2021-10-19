@@ -1,0 +1,113 @@
+html, body {
+    margin: 0%;
+    font-family: Calibri;
+    background-color: #dad8db;
+}
+
+h1{ 
+    color: #f9f8f9;
+    position: relative;
+    margin-top: 1.5%;
+    text-decoration: none;
+}
+
+h2{
+    margin-left: 18%;
+    font-size: 150%;
+}
+
+p{
+    margin: 0px;
+}
+
+.topNav{
+    overflow: hidden;
+    background-color: #010103;
+
+}
+
+.logoIMG{
+    float: left;
+    position: relative;
+    margin: 0px 5px 5px 4%;
+    max-width: 5.6%;
+    max-height: auto;
+}
+
+.resultDiv{
+    color: #dbf1fc;
+    background-color: #031e65;
+    align-items: left;
+    margin-top: 2%;
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    padding-top: 0.78%;
+    padding-bottom: 0.78%;
+    display: inline-block;
+    font-size: 196%;
+}
+
+.search{
+    display: flex;
+    font-size: 150%;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 5px;
+    height: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+}
+
+.s1{
+    display: flex;
+    flex-direction: row;
+}
+
+.s2{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: auto;
+    color: #f9f8f9;
+    font-size: 200%;
+    margin: auto;
+    margin-right: 5%;
+}
+
+.ContainerDiv{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-profile-box{
+    border-radius: 25px;
+    background-color: #afb8c9;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,.8);
+    }
+
+.profilelogoIMG{
+    float: left;
+    position: relative;
+    margin: 0%;
+    max-width: 16%;
+    max-height: auto;
+    border-right: 3px solid #121f3f;
+}
+
+.Footer{
+    background-color: black;
+    font-size: 26px;
+    height:20vh;
+    color: white;
+    margin-top: 1%;
+}
+
